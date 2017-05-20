@@ -7,112 +7,91 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CTM Portal</title>
 	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/mystyle.css" rel="stylesheet" >
+	<link href="css/mystyle.css" rel="stylesheet">
 </head>
 
 <body>
-	<img src="https://www.ctm.net/cportal/images/logot.gif" alt="CTM Logo">
-	<nav class="navbar navbar-default" role="navigation">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">					
+	<main>
+		<img src="https://www.ctm.net/cportal/images/logot.gif" alt="CTM Logo">
+		<nav class="navbar navbar-default" role="navigation">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">					
 					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>		
 				</button>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 				</button>
-			<a class="navbar-brand" href="#">Title</a>
-		</div>
+				<a class="navbar-brand" href="#">Title</a>
+			</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse navbar-ex1-collapse">
-			<ul class="nav navbar-nav">
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						個人服務 <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">預付卡服務</a></li>
-						<li><a class="dropdown-item" href="#">流動電話服務</a></li>
-						<li><a class="dropdown-item" href="#">固網電話服務</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">預付卡服務</a></li>
+							<li><a class="dropdown-item" href="#">流動電話服務</a></li>
+							<li><a class="dropdown-item" href="#">固網電話服務</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						商務服務 <span class="caret"></span>
 					</a>
-					</button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">流動電話服務</a></li>
-						<li><a class="dropdown-item" href="#">互聯網服務</a></li>
-						<li><a class="dropdown-item" href="#">固網電話服務</a></li>
-						<li><a class="dropdown-item" href="#">商業方案</a></li>
-						<li><a class="dropdown-item" href="#">服務管理</a></li>
-						<li><a class="dropdown-item" href="#">服務管理</a></li>
-					</ul>
-				</li>
-			</ul>
-			<form class="navbar-form navbar-right" role="search">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Search">
+						</button>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">流動電話服務</a></li>
+							<li><a class="dropdown-item" href="#">互聯網服務</a></li>
+							<li><a class="dropdown-item" href="#">固網電話服務</a></li>
+							<li><a class="dropdown-item" href="#">商業方案</a></li>
+							<li><a class="dropdown-item" href="#">服務管理</a></li>
+							<li><a class="dropdown-item" href="#">服務管理</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="搜尋">
+					</div>
+					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+				</form>
+			</div>
+			<!-- /.navbar-collapse -->
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-9 col-xs-12">
+					<main>
+						<p>slideshow</p>
+					</main>
 				</div>
-				<button type="submit" class="btn btn-default">Submit</button>
-			</form>
-			<!--<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Link</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
-			</ul>-->
+				<div class="col-md-3 hidden-xs">
+					<form class="login">
+						<h4>CTM 網上服務用戶登記</h4>
+						<div>
+							<input type="text" placeholder="帳號" autofocus>
+						</div>
+						<div>
+							<input type="password" placeholder="密碼">
+						</div>
+						<div>
+							<input type="checkbox" checked="checked"> 在此電腦記錄登入名稱
+						</div>
+						<div>
+							<button type="submit" class="btn btn-primary">登入</button>
+						</div>
+						<a href="#">忘記密碼?</a>
+					</form>
+				</div>
+			</div>
 		</div>
-		<!-- /.navbar-collapse -->
-	</nav>
-
-	<!--<nav>
-			<ul class="top-menu">
-			<li>
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="personal-menu" data-toggle="dropdown">
-						個人服務
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="personal-menu">
-						<li><a class="dropdown-item" href="#">預付卡服務</a></li>
-						<li><a class="dropdown-item" href="#">流動電話服務</a></li>
-						<li><a class="dropdown-item" href="#">固網電話服務</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="personal-menu" data-toggle="dropdown">
-						商務服務
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="personal-menu">
-						<li><a class="dropdown-item" href="#">流動電話服務</a></li>
-						<li><a class="dropdown-item" href="#">互聯網服務</a></li>
-						<li><a class="dropdown-item" href="#">固網電話服務</a></li>
-						<li><a class="dropdown-item" href="#">商業方案</a></li>
-						<li><a class="dropdown-item" href="#">服務管理</a></li>
-						<li><a class="dropdown-item" href="#">服務管理</a></li>
-					</ul>
-				</div>
-			</li>
-			<li></li>
-		</ul>
-		</nav>-->
-	<main>
-
 	</main>
-	<aside>
-		//login
-	</aside>
+
 	<footer>
-		<div class="container"></div>
 		<div class="row">
 			<div class="col-md-3 col-xs-12">
 				<p>流動電話服務</p>
@@ -158,9 +137,8 @@
 				</ul>
 			</div>
 		</div>
-		</div>
 		<div class="footer-copyright">
-			<ul>
+			<ul class="list-inline list-unstyled">
 				<li>使用條款及細則</li>
 				<li>可接受使用政策 (AUP) </li>
 				<li>收集及處理個人資料聲明</li>
@@ -168,6 +146,7 @@
 			</ul>
 		</div>
 	</footer>
+
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

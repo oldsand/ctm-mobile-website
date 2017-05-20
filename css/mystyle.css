@@ -7,3 +7,14 @@
   background-color: blue;
   border-color: white;
 }
+
+.login{
+  border: 1px solid lightblue;
+  width: 100%;
+  padding: 1em;
+}
+
+.login input[type=text], input[type=password], button {
+  margin: 0.4em;
+  width: 100%;
+}
