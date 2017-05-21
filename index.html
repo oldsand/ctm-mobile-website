@@ -12,21 +12,30 @@
 
 <body>
 	<main>
-		<img src="https://www.ctm.net/cportal/images/logot.gif" alt="CTM Logo">
+		<img class="logo hidden-xs" src="https://www.ctm.net/cportal/images/logot.gif" alt="CTM Logo">
 		<nav class="navbar navbar-default" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">					
-					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>		
-				</button>
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 				</button>
-				<a class="navbar-brand" href="#">Title</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse">					
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>		
+				</button>
+				<img class="logo visible-xs" src="https://www.ctm.net/cportal/images/logot.gif" alt="CTM Logo" vertical-align="middle">
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<form class="navbar-form navbar-right" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="搜尋">
+						<span class="input-group-btn">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+						</span>
+					</div>
+
+				</form>
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -52,48 +61,123 @@
 						</ul>
 					</li>
 				</ul>
-				<form class="navbar-form navbar-right" role="search">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="搜尋">
-					</div>
-					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-				</form>
 			</div>
 			<!-- /.navbar-collapse -->
 		</nav>
 
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-9 col-xs-12">
-					<main>
-						<p>slideshow</p>
-					</main>
+			<section>
+				<div class="row">
+					<!--collapse navbar-collapse navbar-ex2-collapse-->
+					<div class="col-md-9 col-sm-12">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="https://www.ctm.net/Homepage/12_Air%20Pod_banner_eportal_chi.jpg" alt="AirPod" style="width:100%;">
+								</div>
+
+								<div class="item">
+									<img src="https://www.ctm.net/Homepage/7-11ctm.net(CN1).jpg" alt="7-11 Billing" style="width:100%;">
+								</div>
+
+								<div class="item">
+									<img src="https://www.ctm.net/Homepage/678x245%20web%20banner%20CN_shopping%20bag.JPG" alt="CTM shopping bag" style="width:100%;">
+								</div>
+							</div>
+
+							<!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+							<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-12 collapse navbar-collapse navbar-ex2-collapse">
+						<form class="login">
+							<h4>CTM 網上服務用戶登記</h4>
+							<div>
+								<input type="text" placeholder="帳號" autofocus>
+							</div>
+							<div>
+								<input type="password" placeholder="密碼">
+							</div>
+							<div>
+								<input type="checkbox" checked="checked"> 在此電腦記錄登入名稱
+							</div>
+							<div>
+								<button type="submit" class="btn btn-primary">登入</button>
+							</div>
+							<a href="#">忘記密碼?</a>
+						</form>
+					</div>
 				</div>
-				<div class="col-md-3 hidden-xs">
-					<form class="login">
-						<h4>CTM 網上服務用戶登記</h4>
-						<div>
-							<input type="text" placeholder="帳號" autofocus>
-						</div>
-						<div>
-							<input type="password" placeholder="密碼">
-						</div>
-						<div>
-							<input type="checkbox" checked="checked"> 在此電腦記錄登入名稱
-						</div>
-						<div>
-							<button type="submit" class="btn btn-primary">登入</button>
-						</div>
-						<a href="#">忘記密碼?</a>
-					</form>
+			</section>
+			<section>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<h6>4G+ 最新優惠</h6>
+						<img src="https://www.ctm.net/Homepage/03_RVP_Tariff_banner_sub%20banner_chi.jpg" class="img-responsive" alt="$40/日漫遊">
+						<nav>
+							<ul class="list-unstyled">
+								<li><a href=#>熱門手機 APP 下載區</a></li>
+								<li><a href=#>CTM Wi-Fi 給您再多點</a></li>
+								<li><a href=#>M.wallet+ 流動支付</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<h6>光纖寬頻優惠</h6>
+						<img src="https://www.ctm.net/Homepage/images/FBB_sub%20banner-01.jpg" class="img-responsive" alt="光纖送$100紅包">
+						<nav>
+							<ul class="list-unstyled">
+								<li><a href=#>居+互聯網收費表</a></li>
+								<li><a href=#>全澳師生及教職員優惠</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<h6>CTM 4G+ 預付卡</h6>
+						<img src="https://www.ctm.net/Homepage/Prepaid28_Subbanner_Chi.jpg" class="img-responsive" alt="光纖送$100紅包">
+						<nav>
+							<ul class="list-unstyled">
+								<li><a href=#>$78/3日「全澳輕鬆任上網」4G+ 預付卡套裝</a></li>
+								<li><a href=#>4G+「酥酥卡」$98 / 30日</a></li>
+								<li><a href=#>IDD 050 特別優惠</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<h6>CTM 4G+ 預付卡</h6>
+						<img src="https://www.ctm.net/Homepage/MD_BP2017_sub-ban.jpg" class="img-responsive" alt="光纖送$100紅包">
+						<nav>
+							<ul class="list-unstyled">
+								<li><a href=#>CTM 積分獎賞計劃</a></li>
+								<li><a href=#>「尊壹會」尊享禮遇</a></li>
+								<li><a href=#>成為 CTM 合作夥伴</a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
-			</div>
+			</section>
 		</div>
 	</main>
 
 	<footer>
 		<div class="row">
-			<div class="col-md-3 col-xs-12">
+			<div class="col-md-3 col-sm-6 col-xs-12">
 				<p>流動電話服務</p>
 				<ul>
 					<li><a href=#>no. 1 流動寬頻</a></li>
@@ -105,7 +189,7 @@
 					<li><a href=#>No.1 流動寬頻小貼士</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 col-xs-12">
+			<div class="col-md-3 col-sm-6 col-xs-12">
 				<p>互聯網服務</p>
 				<ul>
 					<li><a href=#>個人服務</a></li>
@@ -118,7 +202,7 @@
 					<li><a href=#>醒您家居網絡小Tips</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 col-xs-12">
+			<div class="col-md-3 col-sm-6 col-xs-12">
 				<p>固網服務</p>
 				<ul>
 					<li><a href=#>固網服務</a></li>
@@ -128,7 +212,7 @@
 					<li><a href=#>產品</a></li>
 				</ul>
 			</div>
-			<div class="col-md-3 col-xs-12">
+			<div class="col-md-3 col-sm-6 col-xs-12">
 				<p>預付卡服務</p>
 				<ul>
 					<li><a href=#>BEST 預付卡</a></li>
@@ -139,16 +223,17 @@
 		</div>
 		<div class="footer-copyright">
 			<ul class="list-inline list-unstyled">
-				<li>使用條款及細則</li>
-				<li>可接受使用政策 (AUP) </li>
-				<li>收集及處理個人資料聲明</li>
-				<li>授權書</li>
+				<li><a href=#>使用條款及細則</a></li>
+				<li><a href=#>可接受使用政策 (AUP) </a></li>
+				<li><a href=#>收集及處理個人資料聲明</a></li>
+				<li><a href=#>授權書</a></li>
 			</ul>
 		</div>
 	</footer>
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/bootstrap/js/carousel.js"></script>
 </body>
 
 </html>
